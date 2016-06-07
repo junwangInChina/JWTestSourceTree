@@ -105,6 +105,26 @@
             </objects>
             <point key="canvasLocation" x="1270.5" y="799.5"/>
         </scene>
+        <!--Hex Color View Controller-->
+        <scene sceneID="S4q-Q4-VZi">
+            <objects>
+                <viewController storyboardIdentifier="HexColorViewController.h" id="x06-3A-8o4" customClass="HexColorViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="as6-ml-EZh"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hlr-4D-fZj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1G0-fY-RX7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pN5-jU-ToS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1848" y="178"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="1In-PE-e9h">
             <objects>

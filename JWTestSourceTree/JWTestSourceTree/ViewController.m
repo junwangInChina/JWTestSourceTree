@@ -24,7 +24,7 @@
                          @"class":@"QRImageViewController"},
                        @{@"title":@"UIColor+JWHexColor",
                          @"content":@"颜色类别",
-                         @"class":@"QRImageViewController"},
+                         @"class":@"HexColorViewController"},
                        @{@"title":@"NSDate+JWTime",
                          @"content":@"封装了许多日期的常用方法",
                          @"class":@"QRImageViewController"}];

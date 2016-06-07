@@ -17,6 +17,7 @@
 		DA0637211D0662F7005E2042 /* JWTestSourceTreeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0637201D0662F7005E2042 /* JWTestSourceTreeTests.m */; };
 		DA06372C1D0662F7005E2042 /* JWTestSourceTreeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA06372B1D0662F7005E2042 /* JWTestSourceTreeUITests.m */; };
 		DA5B91B01D066F9A00C52AF8 /* QRImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5B91AF1D066F9A00C52AF8 /* QRImageViewController.m */; };
+		DA5B91B31D069A1E00C52AF8 /* HexColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5B91B21D069A1E00C52AF8 /* HexColorViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		DA06372D1D0662F7005E2042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA5B91AE1D066F9A00C52AF8 /* QRImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRImageViewController.h; sourceTree = "<group>"; };
 		DA5B91AF1D066F9A00C52AF8 /* QRImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRImageViewController.m; sourceTree = "<group>"; };
+		DA5B91B11D069A1E00C52AF8 /* HexColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexColorViewController.h; sourceTree = "<group>"; };
+		DA5B91B21D069A1E00C52AF8 /* HexColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexColorViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,8 @@
 				DA06370D1D0662F7005E2042 /* ViewController.m */,
 				DA5B91AE1D066F9A00C52AF8 /* QRImageViewController.h */,
 				DA5B91AF1D066F9A00C52AF8 /* QRImageViewController.m */,
+				DA5B91B11D069A1E00C52AF8 /* HexColorViewController.h */,
+				DA5B91B21D069A1E00C52AF8 /* HexColorViewController.m */,
 				DA06370F1D0662F7005E2042 /* Main.storyboard */,
 				DA0637121D0662F7005E2042 /* Assets.xcassets */,
 				DA0637141D0662F7005E2042 /* LaunchScreen.storyboard */,
@@ -351,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA06370E1D0662F7005E2042 /* ViewController.m in Sources */,
+				DA5B91B31D069A1E00C52AF8 /* HexColorViewController.m in Sources */,
 				DA06370B1D0662F7005E2042 /* AppDelegate.m in Sources */,
 				DA0637081D0662F7005E2042 /* main.m in Sources */,
 				DA5B91B01D066F9A00C52AF8 /* QRImageViewController.m in Sources */,
