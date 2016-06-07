@@ -16,6 +16,7 @@
 		DA0637161D0662F7005E2042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0637141D0662F7005E2042 /* LaunchScreen.storyboard */; };
 		DA0637211D0662F7005E2042 /* JWTestSourceTreeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0637201D0662F7005E2042 /* JWTestSourceTreeTests.m */; };
 		DA06372C1D0662F7005E2042 /* JWTestSourceTreeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA06372B1D0662F7005E2042 /* JWTestSourceTreeUITests.m */; };
+		DA5B91B01D066F9A00C52AF8 /* QRImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5B91AF1D066F9A00C52AF8 /* QRImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		DA0637271D0662F7005E2042 /* JWTestSourceTreeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JWTestSourceTreeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA06372B1D0662F7005E2042 /* JWTestSourceTreeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWTestSourceTreeUITests.m; sourceTree = "<group>"; };
 		DA06372D1D0662F7005E2042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA5B91AE1D066F9A00C52AF8 /* QRImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRImageViewController.h; sourceTree = "<group>"; };
+		DA5B91AF1D066F9A00C52AF8 /* QRImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,8 @@
 				DA06370A1D0662F7005E2042 /* AppDelegate.m */,
 				DA06370C1D0662F7005E2042 /* ViewController.h */,
 				DA06370D1D0662F7005E2042 /* ViewController.m */,
+				DA5B91AE1D066F9A00C52AF8 /* QRImageViewController.h */,
+				DA5B91AF1D066F9A00C52AF8 /* QRImageViewController.m */,
 				DA06370F1D0662F7005E2042 /* Main.storyboard */,
 				DA0637121D0662F7005E2042 /* Assets.xcassets */,
 				DA0637141D0662F7005E2042 /* LaunchScreen.storyboard */,
@@ -348,6 +353,7 @@
 				DA06370E1D0662F7005E2042 /* ViewController.m in Sources */,
 				DA06370B1D0662F7005E2042 /* AppDelegate.m in Sources */,
 				DA0637081D0662F7005E2042 /* main.m in Sources */,
+				DA5B91B01D066F9A00C52AF8 /* QRImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

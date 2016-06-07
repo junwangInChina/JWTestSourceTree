@@ -42,6 +42,69 @@
             </objects>
             <point key="canvasLocation" x="863.5" y="251.5"/>
         </scene>
+        <!--Image View Controller-->
+        <scene sceneID="k6N-aq-AkH">
+            <objects>
+                <viewController storyboardIdentifier="QRImageViewController" id="4gv-Ip-b9q" customClass="QRImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LVV-fJ-LJx"/>
+                        <viewControllerLayoutGuide type="bottom" id="KeN-lt-pHI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="u03-wB-SFV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkr-7V-LEP">
+                                <rect key="frame" x="37" y="111" width="300" height="40"/>
+                                <animations/>
+                                <state key="normal" title="Update"/>
+                                <connections>
+                                    <action selector="updateRQImage:" destination="4gv-Ip-b9q" eventType="touchUpInside" id="nT1-Y6-FEX"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="gcK-Gs-xxG">
+                                <rect key="frame" x="38" y="51" width="300" height="40"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="tt5-tf-96u"/>
+                                    <constraint firstAttribute="height" constant="40" id="xPL-FY-9g1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cBt-UB-WMy">
+                                <rect key="frame" x="38" y="171" width="300" height="300"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="GZy-Wg-ofx"/>
+                                    <constraint firstAttribute="height" constant="300" id="NJu-RZ-yOf"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vkr-7V-LEP" firstAttribute="centerX" secondItem="u03-wB-SFV" secondAttribute="centerX" id="6MN-n2-5yO"/>
+                            <constraint firstItem="cBt-UB-WMy" firstAttribute="centerX" secondItem="u03-wB-SFV" secondAttribute="centerX" id="Atq-F8-L1Z"/>
+                            <constraint firstItem="gcK-Gs-xxG" firstAttribute="centerX" secondItem="u03-wB-SFV" secondAttribute="centerX" id="BKO-U2-9DJ"/>
+                            <constraint firstItem="cBt-UB-WMy" firstAttribute="top" secondItem="vkr-7V-LEP" secondAttribute="bottom" constant="20" id="SN2-rv-hTY"/>
+                            <constraint firstItem="vkr-7V-LEP" firstAttribute="top" secondItem="gcK-Gs-xxG" secondAttribute="bottom" constant="20" id="Xcm-vm-a9i"/>
+                            <constraint firstItem="vkr-7V-LEP" firstAttribute="height" secondItem="gcK-Gs-xxG" secondAttribute="height" id="loH-Rc-Bq2"/>
+                            <constraint firstItem="gcK-Gs-xxG" firstAttribute="top" secondItem="LVV-fJ-LJx" secondAttribute="bottom" constant="31" id="mmQ-cS-XA1"/>
+                            <constraint firstItem="vkr-7V-LEP" firstAttribute="width" secondItem="gcK-Gs-xxG" secondAttribute="width" id="y0g-mI-zBS"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="inputTextField" destination="gcK-Gs-xxG" id="TkN-uB-DWR"/>
+                        <outlet property="qrImageView" destination="cBt-UB-WMy" id="V9n-TW-9wr"/>
+                        <outlet property="updateButton" destination="vkr-7V-LEP" id="Qip-R7-Tap"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aZA-L0-nyO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1270.5" y="799.5"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="1In-PE-e9h">
             <objects>
