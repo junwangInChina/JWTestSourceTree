@@ -108,7 +108,7 @@
         <!--Hex Color View Controller-->
         <scene sceneID="S4q-Q4-VZi">
             <objects>
-                <viewController storyboardIdentifier="HexColorViewController.h" id="x06-3A-8o4" customClass="HexColorViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HexColorViewController" id="x06-3A-8o4" customClass="HexColorViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="as6-ml-EZh"/>
                         <viewControllerLayoutGuide type="bottom" id="Hlr-4D-fZj"/>
@@ -116,10 +116,42 @@
                     <view key="view" contentMode="scaleToFill" id="1G0-fY-RX7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是一个标题" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3h-oH-0el">
+                                <rect key="frame" x="37" y="73" width="300" height="40"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="09j-P8-f9y"/>
+                                    <constraint firstAttribute="width" constant="300" id="aeF-hf-ijk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是另一个标题" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOW-dJ-62b">
+                                <rect key="frame" x="37" y="143" width="300" height="40"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="X3h-oH-0el" firstAttribute="centerX" secondItem="1G0-fY-RX7" secondAttribute="centerX" id="3IW-4S-2WK"/>
+                            <constraint firstItem="X3h-oH-0el" firstAttribute="top" secondItem="1G0-fY-RX7" secondAttribute="top" constant="73" id="4ft-xN-4qQ"/>
+                            <constraint firstItem="zOW-dJ-62b" firstAttribute="height" secondItem="X3h-oH-0el" secondAttribute="height" id="Mv2-Ve-417"/>
+                            <constraint firstItem="zOW-dJ-62b" firstAttribute="width" secondItem="X3h-oH-0el" secondAttribute="width" id="VNN-gg-gwz"/>
+                            <constraint firstItem="zOW-dJ-62b" firstAttribute="top" secondItem="X3h-oH-0el" secondAttribute="bottom" constant="30" id="Wbe-b6-16J"/>
+                            <constraint firstItem="zOW-dJ-62b" firstAttribute="centerX" secondItem="X3h-oH-0el" secondAttribute="centerX" id="Zbt-bp-dim"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tempLabel1" destination="X3h-oH-0el" id="JJm-YY-lnh"/>
+                        <outlet property="tempLabel2" destination="zOW-dJ-62b" id="TJy-zZ-wBY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pN5-jU-ToS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

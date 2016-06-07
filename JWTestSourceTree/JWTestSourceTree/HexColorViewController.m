@@ -8,6 +8,24 @@
 
 #import "HexColorViewController.h"
 
+#import "UIColor+JWHexColor.h"
+
+@interface HexColorViewController()
+@property (weak, nonatomic) IBOutlet UILabel *tempLabel1;
+@property (weak, nonatomic) IBOutlet UILabel *tempLabel2;
+
+@end
+
 @implementation HexColorViewController
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    self.tempLabel1.textColor = [UIColor JW_ColorWithHexString:@"f7ff65"];
+    self.tempLabel2.textColor = [UIColor JW_ColorWithHexString:@"f8f9f3" alpha:0.4];
+}
+
+
 
 @end
