@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38F91AAE597C2BF1D6DDAF08 /* libPods-JWTestSourceTree.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 140A4C4D25C496CCBC7CDBED /* libPods-JWTestSourceTree.a */; };
 		DA0637081D0662F7005E2042 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0637071D0662F7005E2042 /* main.m */; };
 		DA06370B1D0662F7005E2042 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA06370A1D0662F7005E2042 /* AppDelegate.m */; };
 		DA06370E1D0662F7005E2042 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA06370D1D0662F7005E2042 /* ViewController.m */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		140A4C4D25C496CCBC7CDBED /* libPods-JWTestSourceTree.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JWTestSourceTree.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75A6305F1BBCE338853C163B /* Pods-JWTestSourceTree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWTestSourceTree.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JWTestSourceTree/Pods-JWTestSourceTree.debug.xcconfig"; sourceTree = "<group>"; };
+		9843BA664354F02E8C1750AB /* Pods-JWTestSourceTree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWTestSourceTree.release.xcconfig"; path = "Pods/Target Support Files/Pods-JWTestSourceTree/Pods-JWTestSourceTree.release.xcconfig"; sourceTree = "<group>"; };
 		DA0637031D0662F7005E2042 /* JWTestSourceTree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWTestSourceTree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0637071D0662F7005E2042 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DA0637091D0662F7005E2042 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38F91AAE597C2BF1D6DDAF08 /* libPods-JWTestSourceTree.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8CC60658FEB3230C08EA8E69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75A6305F1BBCE338853C163B /* Pods-JWTestSourceTree.debug.xcconfig */,
+				9843BA664354F02E8C1750AB /* Pods-JWTestSourceTree.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DA0636FA1D0662F7005E2042 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +99,8 @@
 				DA06371F1D0662F7005E2042 /* JWTestSourceTreeTests */,
 				DA06372A1D0662F7005E2042 /* JWTestSourceTreeUITests */,
 				DA0637041D0662F7005E2042 /* Products */,
+				8CC60658FEB3230C08EA8E69 /* Pods */,
+				F14A50D3FA90048410A92E46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +156,14 @@
 			path = JWTestSourceTreeUITests;
 			sourceTree = "<group>";
 		};
+		F14A50D3FA90048410A92E46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				140A4C4D25C496CCBC7CDBED /* libPods-JWTestSourceTree.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA0637301D0662F7005E2042 /* Build configuration list for PBXNativeTarget "JWTestSourceTree" */;
 			buildPhases = (
+				116D75BCEEBC0969FED5DD40 /* 📦 Check Pods Manifest.lock */,
 				DA0636FF1D0662F7005E2042 /* Sources */,
 				DA0637001D0662F7005E2042 /* Frameworks */,
 				DA0637011D0662F7005E2042 /* Resources */,
+				9D7D6863145552F8493478BF /* 📦 Embed Pods Frameworks */,
+				936A492FA1512A3597466088 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +291,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		116D75BCEEBC0969FED5DD40 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		936A492FA1512A3597466088 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWTestSourceTree/Pods-JWTestSourceTree-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D7D6863145552F8493478BF /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JWTestSourceTree/Pods-JWTestSourceTree-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DA0636FF1D0662F7005E2042 /* Sources */ = {
@@ -409,6 +484,7 @@
 		};
 		DA0637311D0662F7005E2042 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75A6305F1BBCE338853C163B /* Pods-JWTestSourceTree.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JWTestSourceTree/Info.plist;
@@ -420,6 +496,7 @@
 		};
 		DA0637321D0662F7005E2042 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9843BA664354F02E8C1750AB /* Pods-JWTestSourceTree.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JWTestSourceTree/Info.plist;
@@ -496,6 +573,7 @@
 				DA0637321D0662F7005E2042 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA0637331D0662F7005E2042 /* Build configuration list for PBXNativeTarget "JWTestSourceTreeTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +582,7 @@
 				DA0637351D0662F7005E2042 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA0637361D0662F7005E2042 /* Build configuration list for PBXNativeTarget "JWTestSourceTreeUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +591,7 @@
 				DA0637381D0662F7005E2042 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,1 @@
+../../../JWCategorys/JWCategorysDemo/JWCategorys/UIImage+JWQRImage.h

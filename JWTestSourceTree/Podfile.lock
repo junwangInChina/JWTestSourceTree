@@ -1,0 +1,15 @@
+PODS:
+  - JWCategorys (0.0.3)
+  - Masonry (0.6.1)
+
+DEPENDENCIES:
+  - JWCategorys (~> 0.0.3)
+  - Masonry (= 0.6.1)
+
+SPEC CHECKSUMS:
+  JWCategorys: 7c2658bd75d78670a6c4bd5e3a3080ff628eeb49
+  Masonry: 4972309f2f134de9dd312f4dc4a21359b50e6caa
+
+PODFILE CHECKSUM: 85bb5cc7ef66f116ec2d60debc3a4882c32301c8
+
+COCOAPODS: 1.0.0

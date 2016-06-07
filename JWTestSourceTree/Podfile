@@ -1,0 +1,9 @@
+platform :ios, '7.0'
+inhibit_all_warnings!
+
+target 'JWTestSourceTree' do
+
+pod 'Masonry', '0.6.1'
+pod 'JWCategorys', '~> 0.0.3'
+
+end
